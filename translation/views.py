@@ -23,7 +23,7 @@ client = AzureOpenAI(
 
 # Default Hello endpoint
 def hello(request):
-    return JsonResponse({'message': 'Hello a'})
+    return JsonResponse({'message': 'Hello aavaaz'})
 
 # Translation endpoint
 def translate(request):
