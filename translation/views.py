@@ -23,7 +23,7 @@ client = AzureOpenAI(
 
 # Default Hello endpoint
 def hello(request):
-    return JsonResponse({'message': 'Hello aavaaz with model change'})
+    return JsonResponse({'message': 'Hello aavaaz with model change to 4o'})
 
 # Translation endpoint
 def translate(request):
@@ -52,7 +52,7 @@ def translate(request):
     # Call the OpenAI API for translation
     try:
         completion = client.chat.completions.create(
-            model='oai4o', 
+            model='gpt-4o', 
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
